@@ -160,6 +160,7 @@ spec:
           repoURL: https://${{ parameters.githubServer if parameters.hostType === 'GitHub' else parameters.gitlabServer }}/${{ parameters.repoOwner }}/${{ parameters.repoName }}-gitops
           srcRepoURL: https://${{ parameters.githubServer if parameters.hostType === 'GitHub' else parameters.gitlabServer }}/${{ parameters.repoOwner }}/${{ parameters.repoName }}
           appContainer: quay.io/tpetkos/ilab:latest
+          ilabSelected: true
           appPort: 8501
           modelServiceContainer: quay.io/ai-lab/llamacpp_python:latest
           modelServicePort: 8001          
@@ -278,7 +279,8 @@ spec:
           webhookSecretKey: webhook.secret
           defaultBranch: main
           initContainer: quay.io/yangcao/mistral-7b-code-16k-qlora:latest
-          appContainer: ${{ 'quay.io/redhat-ai-dev/ai-template-bootstrap-app:latest' if parameters.hostType === 'GitHub' else 'quay.io/tpetkos/ilab:latest' }}
+          appContainer: quay.io/tpetkos/ilab:latest
+          ilabSelected: true
           appPort: 8501
           modelServiceContainer: quay.io/ai-lab/llamacpp_python:latest
           modelServicePort: 8001
