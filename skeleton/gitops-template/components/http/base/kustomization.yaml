@@ -14,11 +14,11 @@ resources:
 {%- if not(values.ilabSelected) %}
 - deployment-model-server.yaml
 - service-model-server.yaml
-- model-config.yaml
 {%- endif %}
 - deployment.yaml
 - route.yaml
 - service.yaml
+- model-config.yaml
 {%- if values.rhoaiSelected %}
 - rhoai/
 {%- endif %}

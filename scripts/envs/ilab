@@ -5,3 +5,4 @@ export APP_TAGS='["ai", "ilab", "python", "experimental"]'
 export APP_INTERFACE_CONTAINER="quay.io/tpetkos/ilab:latest"
 export APP_PORT=8501
 export SUPPORT_VLLM=false
+export SUPPORT_ILAB=true
