@@ -1,0 +1,7 @@
+export APP_NAME="ilab-experimental"
+export APP_DISPLAY_NAME="Experimental Instructlab Application"
+export APP_DESC="Instructlab Application example"
+export APP_TAGS='["ai", "ilab", "python", "experimental"]'
+export APP_INTERFACE_CONTAINER="quay.io/tpetkos/ilab:latest"
+export APP_PORT=8501
+export SUPPORT_VLLM=false

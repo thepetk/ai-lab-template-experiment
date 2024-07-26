@@ -70,7 +70,9 @@ spec:
                     is with enough cpu and memory
               required:
                 - namespace
+                # SED_MODEL_SERVER_START
                 - modelServerOpenshift
+                # SED_MODEL_SERVER_END
             - properties:
                 deployMethod:
                   enum:
