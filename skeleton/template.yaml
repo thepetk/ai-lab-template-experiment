@@ -58,6 +58,7 @@ spec:
                   ui:autofocus: true
                   ui:options:
                     rows: 5
+                # SED_MODEL_SERVER_START
                 modelServerOpenshift:
                   title: Large Language Model(LLM) Server
                   description: The model server container to use
@@ -68,6 +69,7 @@ spec:
                   default: llama.cpp
                   ui:help: If you choose vLLM, ensure your cluster has Nvidia GPU supported, and
                     is with enough cpu and memory
+                # SED_MODEL_SERVER_END
               required:
                 - namespace
                 # SED_MODEL_SERVER_START
